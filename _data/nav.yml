@@ -4,13 +4,19 @@ search:
 universal-nav: false
 brand:
     text: TrustedFirmware
-    image: 
+    image:
         enabled: true
         path: /assets/images/TrustedFirmware-Logo_standard-white.png
     url: /
 pages:
     - title: About
-      url: /about/
+      options:
+        - text: Overview
+          url: /about/
+        - text: Join
+          url: /join/
+        - text: FAQ
+          url: /faq/
     - title: Code
       options:
           - text: TF-A
@@ -21,30 +27,55 @@ pages:
             external: true
           - text: TF-A-Tests
             url: https://git.trustedfirmware.org/TF-A/tf-a-tests.git/
-            external: true     
-    - title: Dashboard
+            external: true
+    - title: Review
       options:
           - text: TF-A
-            url:  https://developer.trustedfirmware.org/dashboard/view/6/
+            url: https://review.trustedfirmware.org/q/project:TF-A/trusted-firmware-a
             external: true
           - text: TF-M
-            url: https://developer.trustedfirmware.org/dashboard/view/5/
+            url: https://review.trustedfirmware.org/q/project:trusted-firmware-m
             external: true
-    - title: Wiki
+          - text: TF-A Tests
+            url: https://review.trustedfirmware.org/q/project:TF-A/tf-a-tests
+            external: true
+    - title: Documentation
       options:
-          - text: TF-A
-            url: https://developer.trustedfirmware.org/w/tf_a/
-            external: true
-          - text: TF-M
-            url: https://developer.trustedfirmware.org/w/tf_m/
-            external: true
-    - title: Blog
-      url: /blog/
-    - title: Meetings
-      url: /meetings/
-    - title: News
-      url: /news/
-    - title: FAQ
-      url: /faq/
+          - text: Docs
+            options:
+                - text: TF-A
+                  url:  http://trustedfirmware-a.readthedocs.org/
+                  external: true
+                - text: TF-M
+                  url: https://ci.trustedfirmware.org/job/tf-m-build-test-nightly/lastSuccessfulBuild/artifact/build-docs/tf-m_documents/install/doc/user_guide/html/index.html
+                  external: true
+          - text: Dashboard
+            options:
+                - text: TF-A
+                  url:  https://developer.trustedfirmware.org/dashboard/view/6/
+                  external: true
+                - text: TF-M
+                  url: https://developer.trustedfirmware.org/dashboard/view/5/
+                  external: true
+          - text: Wiki
+            options:
+                - text: TF-A
+                  url: https://developer.trustedfirmware.org/w/tf_a/
+                  external: true
+                - text: TF-M
+                  url: https://developer.trustedfirmware.org/w/tf_m/
+                  external: true
+    - title: News & Blogs
+      options:
+          - text: Blog
+            url: /blog/
+          - text: News
+            url: /news/
+          - text: Meetings
+            url: /meetings/
+    - title: OP-TEE
+      url: https://www.op-tee.org
+    - title: Security
+      url: /security/
     - title: Contact
       url: /contact/
